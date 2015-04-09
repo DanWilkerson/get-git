@@ -18,17 +18,19 @@
       var div = document.createElement('div');
       var text = i;
 
-      if(i % 3 === 0) {
+	   if(i % 3 === 0 && i % 5 === 0) {
 
-        text = 'fizz';
+          text = 'FizzBuzz!';
 
-      }
+        } else if(i % 3 === 0) {
 
-      if(i % 5 === 0) {
+          text = 'fizz';
 
-        text = 'buzz';
+        } else if(i % 5 === 0) {
 
-      }
+          text = 'buzz';
+
+        }
 
       div.textContent = text;
       document
