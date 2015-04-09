@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <title>FizzBuzz</title>
+</head>
+<body>
+  <div class="container" id="results">
+    <h1>Hello World</h1>
+  </div>
+  <script type="text/javascript">
+    var count = 30;
+    var i;
+
+    for(i = 1; i < count; i++) {
+
+      var div = document.createElement('div');
+      var text = i;
+
+      if(i % 3 === 0) {
+
+        text = 'fizz';
+
+      }
+
+      if(i % 5 === 0) {
+
+        text = 'buzz';
+
+      }
+
+      div.textContent = text;
+      document
+        .getElementById('results')
+        .appendChild(div);
+
+    }
+  </script>
+</body>
+</html>
